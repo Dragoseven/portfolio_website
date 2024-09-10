@@ -1,0 +1,163 @@
+body, html{
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color:#667;
+}
+
+
+.nav_left{
+  padding-left: 100px;
+}
+
+.nav_right{
+padding-right: 100px;
+}
+
+.pad_left{
+padding-left: 10px;
+}
+
+.pad_right{
+padding-right: 10px;
+}
+
+.pad_top{
+  margin-top: 20px;
+  align-items: center;
+}
+
+.top{
+  padding-top: 50px;
+}
+
+.center{
+  align-items: center;
+  text-align: center;
+  align-content: center;
+
+}
+
+.img{
+  padding-top: 80px;
+}
+
+.rounded-img{
+  padding-top: 80px;
+  border-radius: 50%;
+  height: 350px;
+}
+
+.ptext {
+  font-family: Helvetica;
+  position: static;
+  text-align: center;
+  top: 45%;
+  width: 100%;
+  font-size: 50px;
+  letter-spacing: 5px;
+  color: #7cfffb;
+  padding-top: 20px;
+}
+.block {
+  height: 500px;
+  background-color: #1b1c1d;
+  width: 100%;
+}
+
+.block2{
+
+  padding-top: 30px;
+  padding-bottom: 60px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color:#314b4d;
+  background-color: #ffffff;
+}
+
+.block3 {
+  height: 910px;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.row2 {
+  padding-top: 50px;
+}
+
+/* about me css */
+
+.about{
+  text-align: center;
+  margin-top: -50px;
+  color: #fff;
+}
+
+
+.blue{
+  padding-top: 100px;
+  width: 100%;
+}
+
+.sizing{
+  font-size: 20px;
+}
+
+.me{
+  padding-right: 30px;
+}
+
+.to{
+  padding-left: 30px;
+}
+
+.top1{
+  padding-top: 130px;
+}
+
+.bottom{
+  padding-bottom: 60px;
+}
+
+footer{
+  /* position: absolute; */
+  background-color: #000000;
+  width:100%;
+  color:rgb(255, 255, 255);
+  text-align: center;
+  padding: 30px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  height: 50px;
+}
+
+.botm{
+  padding-left: 10px;
+  padding-right: 10px
+}
+
+.impg{
+  padding-top: 20px;
+}
+
+/* .pimg1{
+  position: relative;
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  }
+
+.pimg1{
+  background-image: url('../pimg1.jpg');
+  height: 700px;
+}
+
+
+
+  padding:20px;
+
+} */

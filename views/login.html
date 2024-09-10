@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <html>
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Login Page</title>
+
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+        crossorigin="anonymous"
+      />
+
+      <link
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      />
+      <link rel="stylesheet" href="/css/style.css" />
+      <link
+        rel="canonical"
+        href="https://getbootstrap.com/docs/4.0/examples/carousel/"
+      />
+      <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+      <link
+        rel="stylesheet"
+        href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+        crossorigin="anonymous"
+      />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+      <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark fixed-top nav_left"
+        style="background-color: #000000"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Dragos Petrescu</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse flex-d flex-row-reverse nav_right"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="..\views\home.html">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link inactive"
+                  aria-current="page"
+                  href="..\views\projects.html"
+                  >Projects</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Experience</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link p-2" href="../views/login.html"
+                  >Login <span class="sr-only"></span
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+      <div class="block3">
+        <img
+          class="mx-auto d-block"
+          alt="..."
+          height="20%"
+          color=""
+        />
+        
+
+      <form
+        action="/api"
+        method="post"
+        style="text-align: center"
+        style="padding-top: 20px"
+      >
+        <h1>Create Account</h1>
+        <input id="1" type="text"  name="user" />
+        <input id="2" type="text" name="password" />
+        <button type="submit">Submit</button>
+      </form>
+
+      <script>
+        const user = document.getElementById("1");
+        const password = document.getElementById("2");
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          console.log([...data]);
+
+          fetch("/api", {
+            method: "POST",
+            body: JSON.stringify(data),
+          })
+            .then((res) => res.json())
+            .then((data) => console.log(data))
+            .then((err) => console.log(err));
+        });
+      </script>
+
+      <br />
+
+      <form action="/login" method="post" style="text-align: center">
+        <h1>Login</h1>
+        <input id="3" type="text" name="user1" />
+        <input id="4" type="text" name="password1" />
+        <button type="submit">Submit</button>
+      </form>
+
+      <script>
+        const user1 = document.getElementById("3");
+        const password1 = document.getElementById("4");
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          console.log([...data]);
+
+          fetch("/login", {
+            method: "POST",
+            body: JSON.stringify(data),
+          })
+            .then((res) => res.json())
+            .then((data) => console.log(data))
+            .then((err) => console.log(err));
+        });
+      </script>
+    </body>
+  </html>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "resume_site",
+  "version": "1.0.0",
+  "main": "index2.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Dragos_Seven",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.11.0"
+  }
+}
